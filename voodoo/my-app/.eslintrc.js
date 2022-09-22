@@ -1,5 +1,5 @@
 module.exports = {
-  env: {
+  /*env: {
     browser: true,
     es2021: true,
   },
@@ -7,12 +7,12 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
   ],
-  overrides: [
+ /* overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-  },
+  },*/
   plugins: [
     'react',
   ],
