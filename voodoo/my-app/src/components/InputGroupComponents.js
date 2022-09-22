@@ -10,8 +10,8 @@ const Styles = styled.div`
         width: 50%;
     }
 `
-const InputGroupComponents = () => {
-    const [nameAutor, setNameAutor] = useState('');
+const InputGroupComponents = (props) => {
+
     return(
         <>
         <Styles>
@@ -29,7 +29,7 @@ const InputGroupComponents = () => {
                     aria-label="Example text with button addon"
                     aria-describedby="basic-addon1"
                     placeholder="Filter by author"
-                    onChange={setNameAutor}
+                    onChange={props.onChange}
                 />
             </InputGroup>
                 </Row>
