@@ -1,8 +1,8 @@
-import React from "react";
-import { InputGroup, Button, Form, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { InputGroup, Button, Form, Row, Container } from "react-bootstrap";
 import search from "./search.png";
 import styled from "styled-components";
-import { Container } from "bootstrap-4-react/lib/components/layout";
+
 
 
 const Styles = styled.div`
@@ -10,7 +10,7 @@ const Styles = styled.div`
         width: 50%;
     }
 `
-const InputGroupComponent = () => {
+const InputGroupComponents = () => {
     const [nameAutor, setNameAutor] = useState('');
     return(
         <>
@@ -39,5 +39,4 @@ const InputGroupComponent = () => {
        </>
     )
 }
-
-export default InputGroupComponent;
+export default InputGroupComponents;
